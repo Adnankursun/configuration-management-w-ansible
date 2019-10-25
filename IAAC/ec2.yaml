@@ -1,6 +1,7 @@
 ---
 - name: Playbook for Provisioning
   hosts: localhost
+  connection:  local
   tasks:
     - ec2:
         key_name: ansible
