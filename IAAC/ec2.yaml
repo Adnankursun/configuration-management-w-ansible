@@ -1,8 +1,6 @@
 ---
 - name: Playbook for Provisioning
   hosts: localhost
-  become: yes
-  become_method: sudo
   tasks:
     - ec2:
         key_name: ansible
