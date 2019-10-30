@@ -5,7 +5,7 @@
   tasks:
     - local_action:
         module: ec2_elb_lb
-        name: "New ELB"
+        name: "NewELB"
         state: present
         region: us-east-1
         subnets: [ 'subnet-0b29a314c94cab3f5','subnet-07d4e999fd2964530','subnet-00c07395b4d1f031e' ]
