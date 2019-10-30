@@ -17,4 +17,5 @@
 - name: Run Public Playbook
   include: public_subnets.yaml
 
-
+- name: Add igw
+  import_playbook: igw.yaml
