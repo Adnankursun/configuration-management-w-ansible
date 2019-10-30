@@ -25,3 +25,6 @@
         desired_capacity: 3
         vpc_zone_identifier: [ 'subnet-0b29a314c94cab3f5', 'subnet-07d4e999fd2964530', 'subnet-00c07395b4d1f031e' ]
         region: us-east-1
+        tags:
+          - Name: WebServer
+            propagate_at_launch: yes
