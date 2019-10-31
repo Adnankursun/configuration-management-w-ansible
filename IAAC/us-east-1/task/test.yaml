@@ -13,4 +13,4 @@
 
     - name: print  out 
       debug:
-        var: VPC1
+        var: VPC1.vpcs[0].vpc_id
