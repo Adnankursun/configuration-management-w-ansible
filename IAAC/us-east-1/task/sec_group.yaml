@@ -3,6 +3,19 @@
   hosts: localhost
   gather_facts: no
   tasks:
+
+    - name: Collect VPC info
+      ec2_vpc_net_facts:
+        region: us-east-1
+        filters:
+          "tag:Task": VPC
+      register: VPC1
+
+    - name: print  out 
+      debug:
+        var: VPC1
+          
+
     - name: Create Sec Group1
       ec2_group:
         name: SecGroupForVPC
