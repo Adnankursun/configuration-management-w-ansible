@@ -2,6 +2,8 @@
 - name: Playbook for ELB
   hosts: localhost
   gather_facts: no
+  vars_files:
+    - configurations/regions
   tasks:
     - local_action:
         module: ec2_elb_lb
