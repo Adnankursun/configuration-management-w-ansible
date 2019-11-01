@@ -23,5 +23,5 @@
           - "{{Web_subnet3.subnet.id}}"
         routes:
           - dest: 0.0.0.0/0
-            gateway_id: igw-02b1c2836b61d22e9
+            gateway_id: "{{igw.gateway_id}}"
       register: public_route_table
