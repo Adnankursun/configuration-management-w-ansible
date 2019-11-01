@@ -16,7 +16,7 @@
     - name: Create Sec Group1
       ec2_group:
         name: "{{SecGroupName}}"
-        description: "{{sec_group_description}}"
+        description: "{{SecGroupDescription}}"
         vpc_id: "{{VPC1.vpcs[0].vpc_id}}"
         region: "{{region}}"
         rules:
