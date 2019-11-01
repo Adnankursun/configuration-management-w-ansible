@@ -16,7 +16,3 @@
         vpc_id: "{{VPC1.vpcs[0].vpc_id}}"
         state: present
       register: igw
-
-    - name: Value of IGW 
-      debug: 
-        var: igw.gateway_id
