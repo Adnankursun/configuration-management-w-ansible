@@ -39,7 +39,3 @@
         resource_tags:
           Name: Web Subnet3
       register: Web_subnet3
-
-    - name: Subnet info
-      debug: 
-        var: Web_subnet3.subnet.id
