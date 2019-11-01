@@ -23,7 +23,7 @@
         min_size: 3
         max_size: 48
         desired_capacity: 3
-        vpc_zone_identifier: [ "{{Web_subnet1.subnet.id}}", '"{{Web_subnet2.subnet.id}}", "{{Web_subnet3.subnet.id}}" ]
+        vpc_zone_identifier: [ "{{Web_subnet1.subnet.id}}", "{{Web_subnet2.subnet.id}}", "{{Web_subnet3.subnet.id}}" ]
         region: us-east-1
         tags:
           - Name: WebServer
