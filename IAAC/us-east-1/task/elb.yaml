@@ -9,7 +9,7 @@
         state: present
         region: us-east-1
         subnets: [ "{{Web_subnet1.subnet.id}}" ]
-        security_group_ids: sg-06afc288dd4d94142
+        security_group_ids: "{{SecGroup.group_id}}"
         listeners:
           - protocol: http
             load_balancer_port: 80
