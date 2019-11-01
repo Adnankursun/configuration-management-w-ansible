@@ -30,4 +30,4 @@
 
     - name: value
       debug: 
-        var: SecGroup
+        var: SecGroup.group_id
