@@ -19,4 +19,4 @@
 
     - name: Value of IGW 
       debug: 
-        var: igw.id
+        var: igw
