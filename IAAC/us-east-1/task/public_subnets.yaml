@@ -42,4 +42,4 @@
 
     - name: Subnet info
       debug: 
-        var: Web_subnet3.subnet[0].id
+        var: Web_subnet3.subnet.id
