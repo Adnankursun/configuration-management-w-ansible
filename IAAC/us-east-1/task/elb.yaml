@@ -9,7 +9,7 @@
         module: ec2_elb_lb
         name: "NewELB"
         state: present
-        region: us-east-1
+        region: "{{region}}"
         subnets: [ "{{Web_subnet1.subnet.id}}" ]
         security_group_ids: "{{SecGroup.group_id}}"
         listeners:
@@ -19,4 +19,4 @@
             tags:
               Name: "New ELB"
               stack: "production"
-              client: "Bob"
+              client: "{{ELB_TAG_CLIENT}}"
