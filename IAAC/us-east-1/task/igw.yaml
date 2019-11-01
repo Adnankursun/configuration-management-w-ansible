@@ -19,4 +19,4 @@
 
     - name: Value of IGW 
       debug: 
-        var: igw
+        var: igw.gateway_id
